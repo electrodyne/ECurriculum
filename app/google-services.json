@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "110244658141",
+    "firebase_url": "https://ecurriculum-8764b.firebaseio.com",
+    "project_id": "ecurriculum-8764b",
+    "storage_bucket": "ecurriculum-8764b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:110244658141:android:bf17274782328c46",
+        "android_client_info": {
+          "package_name": "electrodyne.rocks.ecurriculum"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "110244658141-n1dnleg4v7dn63j7jln8cc91d58gsk5r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOAZJWLC5ziDBSFT_vZ7FtT_exVSMCF2s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
