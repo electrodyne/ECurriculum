@@ -129,9 +129,9 @@ public class MainActivity extends AppCompatActivity
             fragmentManager.beginTransaction().replace(R.id.fragment_container, new HomeFragment(), null).commit();
             MainActivity.this.setTitle("Home");
 
-        } else if (id == R.id.nav_gallery) {
+    //    } else if (id == R.id.nav_gallery) {
 
-        } else if (id == R.id.nav_slideshow) {
+    //    } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_register) {
             Intent intent = new Intent(MainActivity.this,RegisterActivity.class);

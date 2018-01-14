@@ -8,6 +8,8 @@ import android.support.v4.app.NotificationCompat;
 
 import com.google.firebase.messaging.RemoteMessage;
 
+import java.util.Map;
+
 
 /**
  * Created by Fauni on 1/6/2018.
@@ -17,10 +19,12 @@ public class FirebaseMessagingService extends com.google.firebase.messaging.Fire
 
     @Override
     public void onMessageReceived(RemoteMessage remoteMessage) {
-        showNotification(remoteMessage.getData().get("message"));
+        showNotification(remoteMessage.getData());
     }
 
-    private void showNotification(String message) {
+    private void showNotification(Map<String, String> data) {
+
+        //Set where to go when notification was clicked.
         Intent i = new Intent(this,MainActivity.class);
 
         i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
@@ -31,8 +35,8 @@ public class FirebaseMessagingService extends com.google.firebase.messaging.Fire
 
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this, "0")
                 .setAutoCancel(true)
-                .setContentTitle("ANNOUNCEMENT")
-                .setContentText(message)
+                .setContentTitle(data.get("title"))
+                .setContentText(data.get("message"))
                 .setSound(sound)
                 .setSmallIcon(R.drawable.favicon)
                 .setContentIntent(pendingIntent);
